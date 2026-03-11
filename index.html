@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prime Shine Pressure Washing</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+}
+
+header{
+background:#0a6cff;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.logo span{
+color:#ffd000;
+}
+
+nav{
+background:#222;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(#0a6cff,#003c9e);
+color:white;
+}
+
+.button{
+background:#ffd000;
+color:black;
+padding:14px 24px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+display:inline-block;
+}
+
+.section{
+padding:40px 20px;
+text-align:center;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:250px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.compare{
+position:relative;
+max-width:500px;
+margin:auto;
+}
+
+.compare img{
+width:100%;
+border-radius:10px;
+}
+
+.after{
+position:absolute;
+top:0;
+left:0;
+width:50%;
+overflow:hidden;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:600px){
+
+.services{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+💧 Prime <span>Shine</span>
+</div>
+
+<p>Pressure Washing</p>
+
+</header>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#beforeafter">Before & After</a>
+<a href="reviews.html">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+<h1>Make Your Property Look Brand New</h1>
+<p>Driveways • Houses • Decks • Sidewalks</p>
+
+<!-- PUT YOUR PHONE NUMBER BELOW -->
+
+<a class="button" href="tel:REPLACE_WITH_PHONE">Call Now</a>
+<a class="button" href="sms:REPLACE_WITH_PHONE">Text Us</a>
+
+</section>
+
+<section id="services" class="section">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Driveways</h3>
+<p>Remove oil stains and dirt buildup.</p>
+</div>
+
+<div class="card">
+<h3>House Washing</h3>
+<p>Soft washing for siding and brick.</p>
+</div>
+
+<div class="card">
+<h3>Deck & Patio Cleaning</h3>
+<p>Restore wood and concrete surfaces.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="beforeafter" class="section">
+
+<h2>Before & After</h2>
+
+<div class="compare">
+
+<img src="before.jpg">
+
+<div class="after" id="after">
+<img src="after.jpg">
+</div>
+
+</div>
+
+<input type="range" min="0" max="100" value="50" id="slider">
+
+</section>
+
+<section id="contact" class="section">
+
+<h2>Contact Prime Shine</h2>
+
+<p>Owned by Skyler & Jonah</p>
+
+<a class="button" href="tel:REPLACE_WITH_PHONE">Call</a>
+<a class="button" href="sms:REPLACE_WITH_PHONE">Text</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Prime Shine Pressure Washing</p>
+
+</footer>
+
+<script>
+
+const slider = document.getElementById("slider")
+const after = document.getElementById("after")
+
+slider.addEventListener("input",function(){
+after.style.width = slider.value + "%"
+})
+
+</script>
+
+</body>
+</html>
